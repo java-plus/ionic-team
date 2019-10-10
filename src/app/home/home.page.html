@@ -6,6 +6,7 @@
         </ion-thumbnail>
         <ion-label>{{user.name ? user.name : user.login}}</ion-label>
         <ion-button fill="outline" slot="end" (click)="goToDevApp(user.login)">Conference App</ion-button>
+        <ion-button slot="end" (click)="goToSource(user.login)"> <ion-icon name="logo-github" > </ion-icon> Source</ion-button>
     </ion-item>
 
 </ion-list>

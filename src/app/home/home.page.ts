@@ -24,7 +24,7 @@ export class HomePage implements OnInit {
 
     async init() {
         const loading = await this.loadingController.create({
-          message: 'Récupération des informations Github'
+            message: 'Récupération des informations Github'
         });
 
         await loading.present();
@@ -39,5 +39,9 @@ export class HomePage implements OnInit {
 
     goToDevApp(login: string) {
         window.open(`https://${login}.github.io/conference-ionic`, '_blank');
+    }
+
+    goToSource(login: string) {
+        window.open(`https://github.com/${login}/conference-ionic`, '_blank');
     }
 }
